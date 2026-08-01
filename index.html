@@ -1,53 +1,108 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Metodo Vittoria</title>
-    
-    <style>
-.welcome{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-    background-color:rgb(241, 211, 216);
-    text-align:center;
-    padding:20px;
-    box-sizing:border-box;
-}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-    h1{
-    color: rgb(151, 43, 130);
-}
-    .button-style {
-    width: 30%;
-    padding: 8px;
-    margin: 5px;
-    background-color: rgb(233,233,233);
-    border: 1px solid gray;
-    border-radius: 3px;
-    font-size: 20px;
-    display: block;
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-    </style>
-
+<title>Metodo Vittoria</title>
 
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#972b82">
 
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f7dce5;
+}
+
+.welcome{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:30px;
+}
+
+.logo{
+    font-size:80px;
+    margin-bottom:20px;
+}
+
+h1{
+    color:#972b82;
+    font-size:60px;
+    margin-bottom:10px;
+    font-weight:800;
+}
+
+.subtitle{
+    color:#6f5a67;
+    font-size:22px;
+    margin-bottom:50px;
+}
+
+.button-style{
+
+    width:100%;
+    max-width:340px;
+
+    padding:22px;
+
+    background:white;
+
+    color:#972b82;
+
+    text-decoration:none;
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    border-radius:22px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    transition:.2s;
+
+}
+
+.button-style:hover{
+    transform:scale(1.03);
+}
+
+.button-style:active{
+    transform:scale(.98);
+}
+
+</style>
+
 </head>
+
 <body>
+
 <div class="welcome">
-    <h1>Ciao Vitto!</h1>
-    <a href="menu.html" class="button-style">Cominciamo</a>
+
+<div class="logo">💗</div>
+
+<h1>Metodo Vittoria</h1>
+
+<div class="subtitle">
+Studiare può essere più semplice.
+</div>
+
+<a href="menu.html" class="button-style">
+Cominciamo
+</a>
+
 </div>
 
 <script>
@@ -57,7 +112,6 @@ if ("serviceWorker" in navigator) {
         .catch(err => console.log(err));
 }
 </script>
-
 
 </body>
 </html>
