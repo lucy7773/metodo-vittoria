@@ -34,11 +34,25 @@
 }
     </style>
 
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#972b82">
+
 </head>
 <body>
 <div class="welcome">
     <h1>Ciao Vitto!</h1>
     <a href="menu.html" class="button-style">Cominciamo</a>
 </div>
+
+<script>
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js")
+        .then(() => console.log("Service Worker registrato!"))
+        .catch(err => console.log(err));
+}
+</script>
+
+
 </body>
 </html>
