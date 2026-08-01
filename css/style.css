@@ -33,7 +33,11 @@ body{
 =========================== */
 
 h1{
-    color:purple;
+    color:#972b82;
+    font-size:72px;
+    font-weight:800;
+    margin:0;
+    line-height:1.1;
 }
 
 /* ===========================
@@ -41,19 +45,24 @@ h1{
 =========================== */
 
 .button-style{
-    width:30%;
-    padding:8px;
-    margin:5px;
-    background-color:rgb(233,233,233);
-    border:1px solid gray;
-    border-radius:3px;
-    font-size:20px;
+    width:80%;
+    max-width:340px;
+    padding:20px 30px;
+    margin-top:25px;
+    background-color:white;
+    border:none;
+    border-radius:20px;
+    font-size:28px;
+    font-weight:700;
     display:block;
     text-decoration:none;
-    color:black;
+    color:#972b82;
     text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    transition:transform .2s ease;
     box-sizing:border-box;
 }
+
 
 /* ===========================
    CARD UNITÀ
