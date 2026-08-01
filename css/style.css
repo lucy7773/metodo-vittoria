@@ -34,10 +34,11 @@ body{
 
 h1{
     color:#972b82;
-    font-size:72px;
+    font-size:76px;
     font-weight:800;
-    margin:0;
-    line-height:1.1;
+    margin-bottom:30px;
+    line-height:1;
+    text-align:center;
 }
 
 /* ===========================
