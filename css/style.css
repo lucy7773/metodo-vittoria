@@ -20,13 +20,23 @@ body{
 
 }
 .subject-page{
+
     display:flex;
+
     flex-direction:column;
+
     align-items:center;
-    background-color:rgb(241,211,216);
+
+    background-color:#f7dce5;
+
     min-height:100vh;
-    padding:30px;
+
+    padding:25px 20px;
+
+    box-sizing:border-box;
+
 }
+
 
 /* ===========================
    TITOLI
@@ -146,23 +156,33 @@ h1{
 .unit-card{
 
     display:block;
+
     background:white;
-    border-radius:25px;
-    padding:16px;
-    margin:15px auto;
-    max-width:700px;
-    width:90%;
+
+    border-radius:22px;
+
+    padding:18px;
+
+    margin:12px auto;
+
+    max-width:340px;
+
+    width:100%;
+
     box-sizing:border-box;
 
     text-decoration:none;
-    color:black;
+
+    color:#972b82;
+
     cursor:pointer;
 
-    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
 
-    transition:0.2s;
+    transition:transform .2s ease;
 
 }
+
 .unit-card:hover{
 
     transform:translateY(-2px);
@@ -177,16 +197,22 @@ h1{
 
     align-items:center;
 
-    gap:12px;
+    gap:18px;
 
 }
+
 .unit-number{
 
-    font-size:24px;
+    font-size:22px;
 
     font-weight:bold;
 
+    color:#972b82;
+
+    line-height:1.3;
+
 }
+
 .unit-number small{
 
     font-size:18px;
@@ -825,3 +851,10 @@ box-shadow:0 4px 20px rgba(128,0,255,.25);
 
 }
 
+.unit-icon{
+
+    font-size:30px;
+
+    flex-shrink:0;
+
+}
