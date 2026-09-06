@@ -145,19 +145,27 @@ h2{
 
 <h2>Cosa vuoi fare oggi?</h2>
 
-<a href="#" class="menu-card">
 
-<div class="icon">📷</div>
+<label for="fotoLibro" class="menu-card">
 
-<div class="card-title">
-Ho una pagina del libro
-</div>
+    <div class="icon">📷</div>
 
-<div class="card-description">
-Scatta una foto e ti aiuterò a capire, riassumere e studiare la pagina.
-</div>
+    <div class="card-title">
+        Ho una pagina del libro
+    </div>
 
-</a>
+    <div class="card-description">
+        Scatta una foto della pagina da elaborare.
+    </div>
+
+</label>
+
+<input
+    type="file"
+    id="fotoLibro"
+    accept="image/*"
+    capture="environment"
+    style="display:none;">
 
 <a href="scegli-materia.html" class="menu-card">
 
